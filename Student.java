@@ -19,7 +19,7 @@ public class Student extends User implements Serializable {
 		
 		public Student(User user, StudentType type) {
 			super(user.getFirstName(), user.getLastName(), user.getId(), user.getEmail(), user.getPhoneNumber(), user.getUsername(), 
-					user.getPassword(), user.isLoggedIn(), user.isStudent(), user.isDepartmentHead(), user.islecturer());
+					user.getPassword(), user.isLoggedIn(), user.isDepartmentHead(), user.isStudent(), user.islecturer());
 			this.type = type;
 		}
 
