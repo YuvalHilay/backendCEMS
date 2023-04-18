@@ -19,7 +19,7 @@ public class Lecture extends User implements Serializable {
 		
 		public Lecture(User user, LectureType type) {
 			super(user.getFirstName(), user.getLastName(), user.getId(), user.getEmail(), user.getPhoneNumber(), user.getUsername(), 
-					user.getPassword(), user.isLoggedIn(), user.islecturer(), user.isDepartmentHead(), user.islecturer());
+					user.getPassword(), user.isLoggedIn(), user.isDepartmentHead(), user.isStudent(), user.islecturer());
 			this.type = type;
 		}
 
