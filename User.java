@@ -1,9 +1,16 @@
-package models;
+package mod;
 
 import java.io.Serializable;
 
 public class User implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 *
 	/**
 	 * User for data base 
 	 */
@@ -17,9 +24,11 @@ public class User implements Serializable {
 	private boolean isLoggedIn;
 	private boolean isStudent;
 	private boolean islecturer;
+	private boolean isDepartmentHead;
+	
 	
 	public User(String firstName, String lastName, Integer id, String email, String phoneNumber, String username,
-			String password, boolean isLoggedIn,boolean islecturer,boolean isStudent ) {
+			String password, boolean isLoggedIn,boolean islecturer,boolean isStudent, boolean isDepartmentHead ) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -31,6 +40,7 @@ public class User implements Serializable {
 		this.isLoggedIn = isLoggedIn;
 		this.islecturer = islecturer;
 		this.isStudent = isStudent;
+		this.isDepartmentHead = isDepartmentHead;
 	}
 
 	public String getFirstName() {
@@ -98,7 +108,9 @@ public class User implements Serializable {
 	public boolean isLoggedIn() {
 		return isLoggedIn;
 	}
-
+	public boolean isDepartmentHead() {
+		return isDepartmentHead;
+	}
 	public void setLoggedIn(boolean isLoggedIn) {
 		this.isLoggedIn = isLoggedIn;
 	}	
@@ -107,5 +119,8 @@ public class User implements Serializable {
 	}	
 	public void setlecturer(boolean islecturer) {
 		this.islecturer = islecturer;
+	}	
+	public void setDepartmentHead(boolean isDepartmentHead) {
+		this.isDepartmentHead = isDepartmentHead;
 	}	
 }
