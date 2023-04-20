@@ -12,7 +12,7 @@ public class Student extends User implements Serializable {
 
 		public Student(String firstName, String lastName, Integer id, String email, String phoneNumber, String username,
 				String password, boolean isLoggedIn, StudentType type) {
-			super(firstName, lastName, id, email, phoneNumber, username, password, isLoggedIn, isDepartmentHead, isStudent, islecturer);
+			super(firstName, lastName, id, email, phoneNumber, username, password, isLoggedIn, isLoggedIn, isLoggedIn, isLoggedIn);
 			
 			this.type = type;
 		}
@@ -31,4 +31,3 @@ public class Student extends User implements Serializable {
 			this.type = type;
 		}
 }
-
