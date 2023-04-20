@@ -12,8 +12,7 @@ public class Lecture extends User implements Serializable {
 
 		public Lecture(String firstName, String lastName, Integer id, String email, String phoneNumber, String username,
 				String password, boolean isLoggedIn, LectureType type) {
-			super(firstName, lastName, id, email, phoneNumber, username, password, isLoggedIn, isDepartmentHead, isStudent, islecturer);
-			
+			super(firstName, lastName, id, email, phoneNumber, username, password, isLoggedIn, isLoggedIn, isLoggedIn, isLoggedIn);
 			this.type = type;
 		}
 		
